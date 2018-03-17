@@ -3,7 +3,7 @@ from flask import request
 node = Flask(__name__)
 
 #Store every transaction to a list
-this_nodes_transaction = []
+this_nodes_transactions = []
 
 
 #Say hi to JSON ;)
@@ -15,7 +15,7 @@ def transaction():
         new_transaction = request.get_json()
 
         #Add the transaction to our list
-        this_nodes_transaction.append(new_transaction)
+        this_nodes_transactions.append(new_transaction)
 
         #Print the damn thing out so we know what's what
         print "Transaction:"
