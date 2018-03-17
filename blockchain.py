@@ -2,7 +2,7 @@ from Block import *
 import datetime as date
 
 def genesis_block():
-    return Block(0, date.datetime.now(), "I am the first. Pullman, Washington", "0")
+    return Block(0, date.datetime.now(), { "proof-of-work": 9, "transactions": None}, "0")
 
 # Function to generate new block
 def next_block(last_block):
