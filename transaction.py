@@ -8,7 +8,6 @@ this_nodes_transactions = []
 
 #Say hi to JSON ;)
 @node.route('/transaction', methods=['POST'])
-
 def transaction():
     if request.method == 'POST':
         #On each POST request, exctract the data

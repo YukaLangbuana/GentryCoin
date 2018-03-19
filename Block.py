@@ -18,7 +18,7 @@ class Block:
     #   made out of the block's index, timestamp, data, and previous block's hash
     def hash_block(self):
         sha = hasher.sha256()               
-        sha.update(str(self.index).encode('utf-8')      +
+        sha.update(str(self.index)     +
                    str(self.timestamp) +
                    str(self.data)      +
                    str(self.previous_hash))
