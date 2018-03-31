@@ -13,7 +13,7 @@ def next_block(last_block):
 
     return Block(this_index, this_timestamp, this_data, this_hash)
 
-#=======================FOR TESTING PURPOSE==========================================
+#=======================FOR TESTING PURPOSES==========================================
 
 # Create the blockchain and add the genesis block
 blockchain = [genesis_block()]
