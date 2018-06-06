@@ -1,3 +1,4 @@
+#Bismillah.
 import hashlib as hasher
 
 class Block:
